@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="manifest" href="/PWA_final/manifest.json">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +9,9 @@
 
 	<!-- title -->
 	<title>Kevin Canales</title>
+
+	<!--Manifest-->
+	<link rel="manifest" href="./manifest.json">
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
@@ -136,7 +140,7 @@
 				<div class="col-lg-9 offset-lg-2 text-center">
 					<div class="hero-text">
 						<div class="hero-text-tablecell">
-							<p class="subtitle">Fresh & Organic</p>
+							<p class="subtitle">Kevin Jair Canales Montoya</p>
 							<h1>Delicious Seasonal Fruits</h1>
 							<div class="hero-btns">
 								<a href="shop.html" class="boxed-btn">Fruit Collection</a>
@@ -549,6 +553,19 @@
 	<!-- service worked -->
 	<!-- Service W -->
 	<script src="assets/js/app.js"></script>
+
+	<script src="./registro_SW.js"></script> 
+    <script>
+      $(function(){
+    //Precarga de la pagina se ejecuta solo una vez
+    setTimeout(
+        ()=>{
+            $(".cargando").hide(); 
+         } , 50
+     );
+     });
+	</script>
+
 
 </body>
 </html>
